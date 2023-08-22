@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </LINk:css>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+    integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+    integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <style>
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+    }
+  </style>
+  <link rel="stylesheet" href="depart_.css">
+  
+</head>
+
+<body>
+  <img class="head" src="head2.png" alt="">
+  <div class="cara">
+    <img class="caraC" src="./1.png" alt="">
+  </div>
+
+
+
+  <div class="container content">
+    <div class="director">
+      <img class="director" src="./DEPT_pic.png" alt="">
+    </div>
+    <div class="text_direct">
+      <div class="heading-drict">
+        <h2>ABOUT DEPARTMENT</h2> <br>
+      </div>
+      <p>Welcome to Malaviya National Institute of Technology Jaipur. ineers, managers, architects and scientists.
+        Ranked 37th nationally in, postgraduate students, and researchers in various domains. Read MoreWelcome to
+        Malaviya National Institute of Technology Jaipur. Being one of the oldest NITs, the institute has a rich
+        heritage of sixty years producing world class engineers, managers, architects and scientists.
+      <p style="color: blue;">Read more...</p>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <div style="text-align: center;" class="photos">
+    <img style="margin: 1% auto; width: 85%;" src="./Screenshot 2023-08-14 172129.png" alt="">
+    <img style="margin: 1% auto; width: 85%;" src="./Screenshot 2023-08-14 172443.png" alt="">
+    <img style="margin: 1% auto; width: 85%;" src="./courses.png" alt="">
+    <img style="margin: 1% auto; width: 70%;" src="./recruit.png" alt="">
+    <img class="footer" src="./footer.png" alt="">
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-submenu a.test').on("click", function (e) {
+        var $submenus = $(this).closest('.dropdown-menu').find('.dropdown-submenu .dropdown-menu');
+        $submenus.not($(this).next('ul')).hide();
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+    });
+  </script>
+
+</body>
+
+</html>
